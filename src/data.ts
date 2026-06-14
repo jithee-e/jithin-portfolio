@@ -1,5 +1,11 @@
 import { Project, Skill, EducationEntry, ContactInfo, Certificate, ExperienceEntry } from './types';
 
+// Import image assets directly so that Vite bundles and hashes them correctly in production
+import medcoreClinicImg from './assets/images/medcore_clinic_1781445232075.jpg';
+import luxeSalonImg from './assets/images/regenerated_image_1781447915126.png';
+import designPortfolioImg from './assets/images/design_portfolio_1781445262585.jpg';
+import caseStudyScreensImg from './assets/images/case_study_screens_1781445292289.jpg';
+
 export const projectsData: Project[] = [
   {
     id: 'medcore',
@@ -7,7 +13,7 @@ export const projectsData: Project[] = [
     subtitle: 'Premium Medical & Wellness Digital Presence',
     description: 'A high-conversion digital presence engineered with immediate trust triggers (ISO/Accreditation badges) and a simplified visual structure for a premium, multi-disciplinary clinic.',
     category: 'Creative Web Design',
-    image: '/src/assets/images/medcore_clinic_1781445232075.jpg',
+    image: medcoreClinicImg,
     tags: ['UI/UX Design', 'Figma', 'Clinical Excellence System', 'Conversion Boosters', 'Auto Layout 5.0'],
     role: 'Lead UI/UX Designer',
     year: '2026',
@@ -50,7 +56,7 @@ export const projectsData: Project[] = [
     subtitle: 'Mobile Appointment Booking System UI',
     description: 'A high-fidelity mobile boutique experience translating premium, tactile physical spa aesthetics into a sleek mobile ecosystem with an editorial layout, progressive disclosure, and integrated loyalty rewards.',
     category: 'Mobile Application',
-    image: '/src/assets/images/regenerated_image_1781447915126.png',
+    image: luxeSalonImg,
     tags: ['Mobile UI', 'Figma', 'Editorial Layout', 'Progressive Disclosure', 'Loyalty Rewards'],
     role: 'Lead Product Designer',
     year: '2025',
@@ -93,7 +99,7 @@ export const projectsData: Project[] = [
     subtitle: 'Personal Portfolio Design',
     description: 'An editorial, publication-style personal portfolio website inspired by luxury magazines and architectural brochures. Maximizes white space, oversized typography, and deep cobalt-blue accents.',
     category: 'Creative Web Design',
-    image: '/src/assets/images/design_portfolio_1781445262585.jpg',
+    image: designPortfolioImg,
     tags: ['Portfolio UI', 'Editorial Layout', 'Tailwind CSS', 'Framer Motion'],
     role: 'UI/UX Designer',
     year: '2026',
@@ -119,7 +125,7 @@ export const projectsData: Project[] = [
     subtitle: 'MedCore & Luxe Salon Design Rationales',
     description: 'A deeply organized repository indexing exhaustive design rationales, target user archetypes, responsive layout grids, progressive booking flows, digital-to-physical bridges, and behavioral conversion optimization frameworks for elite healthcare and beauty platforms.',
     category: 'Product Strategy & UX Research',
-    image: '/src/assets/images/case_study_screens_1781445292289.jpg',
+    image: caseStudyScreensImg,
     tags: ['Figma UX Decisions', 'User Persona Sheets', 'CRO Strategies', 'Design Systems'],
     role: 'Lead UX Researcher & Planner',
     year: '2026',
