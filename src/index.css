@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-accent-blue: #DA5E3A;
+  --color-accent-blue-hover: #BF4725;
+
+  --color-neutral-50: #FAF8F5;
+  --color-neutral-100: #F5EFE4;
+  --color-neutral-200: #EADEC9;
+  --color-neutral-300: #D8C7AD;
+  --color-neutral-400: #B8A284;
+  --color-neutral-500: #8A7459;
+  --color-neutral-600: #6A5741;
+  --color-neutral-700: #4F3F2E;
+  --color-neutral-800: #33281E;
+  --color-neutral-900: #1E1714;
+  
+  --color-stone-50: #FAF8F5;
+  --color-stone-100: #F5EFE4;
+  --color-stone-200: #EADEC9;
+  --color-stone-300: #D8C7AD;
+  --color-stone-400: #B8A284;
+  --color-stone-500: #8A7459;
+  --color-stone-600: #6A5741;
+  --color-stone-700: #4F3F2E;
+  --color-stone-800: #33281E;
+  --color-stone-900: #1E1714;
+
+  --color-blue-50: #FDF2EE;
+  --color-blue-100: #FAD8CC;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    background-color: #FAF8F5;
+    color: #1E1714;
+  }
+  
+  /* Custom scrollbar to match premium booklet styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #EADEC9;
+    border-radius: 9999px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D8C7AD;
+  }
+}
+
+/* Subtle booklet paper texture overlay */
+.booklet-grain {
+  position: relative;
+}
+
+.booklet-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.015;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
