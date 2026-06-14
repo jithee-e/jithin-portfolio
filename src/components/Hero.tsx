@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { ArrowDown, Mail, MapPin, Sparkles, MoveRight } from 'lucide-react';
 import { contactInfo } from '../data';
-
+import profileImage from '../assets/images/jithin_profile_real_1781445948022.jpg';
 export default function Hero() {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -164,8 +164,8 @@ export default function Hero() {
             >
               <div className="relative w-full h-full rounded-xl overflow-hidden border border-neutral-100 flex items-center bg-neutral-100">
                 <img
-                  src="/src/assets/images/jithin_profile_real_1781445948022.jpg"
-                  alt="Jithin Rajan Profile Portrait"
+                  src={profileImage}
+                   alt="Jithin Rajan Profile Portrait"
                   className="w-full h-full object-cover object-top scale-102 hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                 />
